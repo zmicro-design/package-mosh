@@ -1,0 +1,17 @@
+#!/bin/bash
+
+help() {
+  echo "Usage:"
+  echo "  zmicro mosh <args ...>"
+  echo ""
+}
+
+core() {
+  "$@"
+}
+
+run() {
+  core "$@"
+}
+
+run "$@"
